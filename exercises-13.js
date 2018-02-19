@@ -1,9 +1,14 @@
 function countProfit(shoppers) {
+  if(shoppers == false) {
+    return shoppers;
+  }
+
   let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                      ['Baju Zoro', 500000, 2],
                      ['Sweater Uniklooh', 175000, 1]
                    ];
   var arr = [];
+
   for(var i = 0; i < listBarang.length; i++) {
     var hasil = {
       product: listBarang[i][0],
